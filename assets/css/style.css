@@ -1,12 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-
     background: url('../img/codigo.svg'), linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-
-
     background-size: auto;
     background-repeat: no-repeat;
-    /* Hace que la imagen cubra todo el área del elemento */
     background-position: right;
     min-height: 100vh;
     margin: 0;
@@ -25,7 +21,6 @@ textarea {
     border-radius: 4px;
 }
 
-/* Estilo general para todos los botones */
 button {
     padding: 10px 40px;
     width: fit-content;
@@ -40,19 +35,14 @@ button {
 
 button:hover {
     background-color: #4cae4c;
-    /* Color de hover general para todos los botones */
 }
 
-/* Estilo específico para el botón de eliminar */
 button.eliminar-gasto:hover {
     background-color: #c62828;
-    /* Color de hover rojo para el botón de eliminar */
 }
 
-/* Estilo específico para el botón de editar */
 button.editar-gasto:hover {
     background-color: #f57c00;
-    /* Naranja */
 }
 
 ul {
@@ -87,11 +77,10 @@ ul li:last-child {
     padding: 20px;
     background: linear-gradient(0deg, rgba(20, 68, 128, 0.3), rgba(20, 68, 128, 0.3)),
         linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-
     border-radius: 24px;
     color: white;
     box-shadow: 4px 4px 20px 0px #01080E26;
-    border: 1px solid #1875E8
+    border: 1px solid #1875E8;
 }
 
 .container {
@@ -167,90 +156,41 @@ ul li:last-child {
 @media (max-width: 768px) {
     body {
         font-size: 0.9rem;
-        /* Texto ligeramente más pequeño */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     .main-container {
         width: 95%;
         padding: 15px;
         top: 30px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .form-group {
-        width: 100%;
-        gap: 15px;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-
-    ul li {
-        padding: 10px;
-    }
-
-    ul li button {
-        width: 100%;
-    }
-
-    .total {
-        font-size: 22px;
-    }
-}
-
-/* Media query para pantallas de menos de 768px (tablets y móviles) */
-@media (max-width: 768px) {
-    .main-container {
-        width: 100%;
-        padding: 10px;
-        top: 50px;
-        left: 0;
         border-radius: 16px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .form-group {
-        width: 100%;
-        gap: 15px;
+        background: linear-gradient(0deg, rgba(20, 68, 128, 0.4), rgba(20, 68, 128, 0.4)),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     }
 
     button {
-        width: 100%;
-        /* Botones ocupan todo el ancho */
         font-size: 1rem;
-        /* Reducimos el tamaño de letra */
         padding: 10px 0;
-        /* Más espacio vertical, menos horizontal */
-    }
-
-    ul li {
-        flex-direction: column;
-        /* Para que el texto y botones se vean uno debajo del otro */
-        align-items: flex-start;
-        gap: 10px;
-        padding: 15px;
-    }
-
-    ul li button {
-        width: 100%;
-        /* Botones eliminan y editar ocupan todo el ancho */
     }
 }
 
-/* Media query para pantallas pequeñas (teléfonos móviles) de menos de 480px */
+/* Media query para pantallas de menos de 480px (móviles pequeños) */
 @media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
     .main-container {
         top: 20px;
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(0deg, rgba(20, 68, 128, 0.5), rgba(20, 68, 128, 0.5)),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
     }
 
     .form-group {
@@ -259,7 +199,6 @@ ul li:last-child {
 
     button {
         font-size: 0.9rem;
-        /* Tamaño de letra más pequeño para pantallas muy pequeñas */
     }
 
     ul li {
@@ -268,6 +207,5 @@ ul li:last-child {
 
     .total {
         font-size: 20px;
-        /* Reducimos el tamaño del total en pantallas pequeñas */
     }
 }
