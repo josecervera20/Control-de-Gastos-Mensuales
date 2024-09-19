@@ -25,6 +25,7 @@ textarea {
     border-radius: 4px;
 }
 
+/* Estilo general para todos los botones */
 button {
     padding: 10px 40px;
     width: fit-content;
@@ -39,6 +40,19 @@ button {
 
 button:hover {
     background-color: #4cae4c;
+    /* Color de hover general para todos los botones */
+}
+
+/* Estilo específico para el botón de eliminar */
+button.eliminar-gasto:hover {
+    background-color: #c62828;
+    /* Color de hover rojo para el botón de eliminar */
+}
+
+/* Estilo específico para el botón de editar */
+button.editar-gasto:hover {
+    background-color: #f57c00;
+    /* Naranja */
 }
 
 ul {
@@ -112,5 +126,148 @@ ul li:last-child {
     font-size: 24px;
     text-align: center;
     color: #fff;
+}
 
+/* Media query para pantallas de menos de 1024px (tablets) */
+@media (max-width: 1024px) {
+    .main-container {
+        width: 90%;
+        padding: 20px;
+        top: 50px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .form-group {
+        width: 100%;
+        gap: 20px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    ul li {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    ul li button {
+        width: 100%;
+    }
+}
+
+/* Media query para pantallas de menos de 768px (móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        /* Texto ligeramente más pequeño */
+    }
+
+    .main-container {
+        width: 95%;
+        padding: 15px;
+        top: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        gap: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    ul li button {
+        width: 100%;
+    }
+
+    .total {
+        font-size: 22px;
+    }
+}
+
+/* Media query para pantallas de menos de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 10px;
+        top: 50px;
+        left: 0;
+        border-radius: 16px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+        /* Botones ocupan todo el ancho */
+        font-size: 1rem;
+        /* Reducimos el tamaño de letra */
+        padding: 10px 0;
+        /* Más espacio vertical, menos horizontal */
+    }
+
+    ul li {
+        flex-direction: column;
+        /* Para que el texto y botones se vean uno debajo del otro */
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    ul li button {
+        width: 100%;
+        /* Botones eliminan y editar ocupan todo el ancho */
+    }
+}
+
+/* Media query para pantallas pequeñas (teléfonos móviles) de menos de 480px */
+@media (max-width: 480px) {
+    .main-container {
+        top: 20px;
+    }
+
+    .form-group {
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        /* Tamaño de letra más pequeño para pantallas muy pequeñas */
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    .total {
+        font-size: 20px;
+        /* Reducimos el tamaño del total en pantallas pequeñas */
+    }
 }
