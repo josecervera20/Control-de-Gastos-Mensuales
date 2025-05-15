@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Metadatos -->
@@ -16,21 +16,30 @@
 <body>
     <div class="main-container">
         <div class="container">
+            <!-- Encabezado con imagen -->
             <div class="img-container">
-                <img src="./assets/img/titulo.png" />
+                <img src="./assets/img/titulo.png" alt="Título Control de Gastos">
             </div>
+
+            <!-- Formulario para ingresar gastos -->
             <div class="form-group">
                 <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
                 <textarea id="descripcionGasto" placeholder="Descripción del gasto" rows="3"></textarea>
                 <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
                 <button id="botonFormulario" onclick="clickBoton();">Agregar Gasto</button>
             </div>
+
+            <!-- Lista de gastos registrados -->
             <ul id="listaDeGastos"></ul>
+
+            <!-- Total acumulado en pesos mexicanos -->
             <div class="total">
-                Total Mensual: US$ <span id="totalGastos">0.00</span>
+                Total Mensual: MXN $<span id="totalGastos">0.00</span>
             </div>
         </div>
     </div>
+
+    <!-- JS -->
     <script src="assets/js/script.js"></script>
 </body>
 
