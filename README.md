@@ -6,7 +6,7 @@ Este proyecto es una aplicación web que permite a los usuarios registrar, modif
 ## 🚀 Características
 
 - **Registrar gastos** con nombre, descripción y valor.
-- **Alertas** cuando un gasto supera los $150 USD.
+- **Alertas** cuando un gasto supera los $2,500 MXN.
 - **Modificación y eliminación** de gastos previamente registrados.
 - **Cálculo y visualización automática** del total de gastos.
 - **Diseño responsivo** para dispositivos móviles y pantallas de escritorio.
@@ -44,7 +44,7 @@ Este proyecto es una aplicación web que permite a los usuarios registrar, modif
 2. Haz clic en **"Agregar Gasto"** para registrar el gasto.
 3. Si deseas modificar un gasto, haz clic en el botón **"Editar"** al lado del gasto en la lista, ajusta los valores y presiona **"Actualizar Gasto"**.
 4. Para eliminar un gasto, presiona el botón **"Eliminar"**.
-5. Los gastos con un valor mayor a $150 USD mostrarán una alerta de advertencia.
+5. Los gastos con un valor mayor a $2,500 MXN mostrarán una alerta de advertencia.
 
 ## 📂 Estructura del Proyecto
 
