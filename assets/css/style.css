@@ -144,6 +144,17 @@ ul li:last-child {
     .img-container img {
         width: 70%;
     }
+
+    button {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 /* Responsive: móviles (max-width: 600px) */
