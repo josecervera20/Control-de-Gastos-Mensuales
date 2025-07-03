@@ -1,55 +1,67 @@
-# Sistema de Gestión de Gastos
+# 💰 Sistema de Gestión de Gastos
 
+## 📝 Descripción del Proyecto
 
-Este proyecto es una aplicación web que permite a los usuarios registrar, modificar y eliminar gastos, con la opción de agregar una descripción detallada a cada gasto.
+**Controla tus finanzas personales de forma sencilla y efectiva.** Esta aplicación web intuitiva está diseñada para ayudarte a **registrar, monitorear y administrar tus gastos mensuales**. Tendrás una visión clara de dónde va tu dinero, pudiendo registrar cada gasto con una descripción detallada y un valor, además de modificar o eliminar entradas según sea necesario.
+
+---
 
 ## 🚀 Características
 
-- **Registrar gastos** con nombre, descripción y valor.
-- **Alertas** cuando un gasto supera los $2,500 MXN.
-- **Modificación y eliminación** de gastos previamente registrados.
-- **Cálculo y visualización automática** del total de gastos.
-- **Diseño responsivo** para dispositivos móviles y pantallas de escritorio.
-- **Interfaz limpia y fácil de usar**.
+- **Registro Detallado**: Guarda cada gasto con un nombre, descripción y valor.
+- **Alertas**: Recibe **alertas visuales inmediatas** si un gasto supera los **$2,500 MXN**.
+- **Edición y Eliminación**: Modifica o elimina cualquier gasto registrado de forma flexible.
+- **Cálculo Automático**: La aplicación **suma automáticamente todos tus gastos**, mostrando el total acumulado en tiempo real.
+- **Diseño Responsivo**: Disfruta de una experiencia fluida en **teléfonos móviles y computadoras de escritorio**.
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5**: Estructura básica de la página web.
-- **CSS3**: Diseño y estilos responsivos con media queries.
-- **JavaScript**: Lógica de la aplicación, manejo de eventos y manipulación del DOM.
+Este proyecto está construido con tecnologías web estándar:
 
-## 📦 Instalación y Ejecución
+- **HTML5**: Estructura semántica de la aplicación.
+- **CSS3**: Estilos, diseño moderno y adaptación responsiva con **Media Queries**.
+- **JavaScript**: Lógica de la aplicación, manejo de eventos y manipulación del DOM para el cálculo de totales.
 
-1. Clona el repositorio a tu máquina local:
+---
 
+## 📦 Instalación y Ejecución Local
+
+Sigue estos pasos para usar la aplicación en tu máquina:
+
+1.  **Clona el repositorio:**
     ```bash
     git clone https://github.com/josecervera20/Control-de-Gastos-Mensuales.git
     ```
-
-2. Navega al directorio del proyecto:
-
+2.  **Navega al directorio:**
     ```bash
     cd Control-de-Gastos-Mensuales
     ```
-
-3. Abre el archivo `index.html` en tu navegador favorito:
-
+3.  **Abre `index.html` en tu navegador:**
     ```bash
-    open index.html
+    open index.html # macOS
+    start index.html # Windows
+    xdg-open index.html # Linux
     ```
 
-## 📋 Uso
+---
 
-1. En la pantalla principal, ingresa el nombre del gasto, una descripción detallada y el valor correspondiente.
-2. Haz clic en **"Agregar Gasto"** para registrar el gasto.
-3. Si deseas modificar un gasto, haz clic en el botón **"Editar"** al lado del gasto en la lista, ajusta los valores y presiona **"Actualizar Gasto"**.
-4. Para eliminar un gasto, presiona el botón **"Eliminar"**.
-5. Los gastos con un valor mayor a $2,500 MXN mostrarán una alerta de advertencia.
+## 🚀 Guía de Uso
+
+Una vez abierta la aplicación, gestiona tus gastos así:
+
+1.  **Registrar Gasto:** Ingresa el nombre, descripción y valor en los campos. Haz clic en **"Agregar Gasto"**.
+2.  **Modificar Gasto:** Haz clic en **"Editar"** junto al gasto, ajusta los valores y presiona **"Actualizar Gasto"**.
+3.  **Eliminar Gasto:** Presiona el botón **"Eliminar"** junto al gasto.
+4.  **Monitoreo de Alertas:** Los gastos mayores a $2,500 MXN se resaltarán visualmente.
+
+---
 
 ## 📂 Estructura del Proyecto
 
-```lua
-/project-root
+```
+/Control-de-Gastos-Mensuales
 │
 ├── /assets
 │   ├── /css
@@ -65,12 +77,21 @@ Este proyecto es una aplicación web que permite a los usuarios registrar, modif
 └── README.md
 ```
 
+---
+
 ## 🤝 Contribuciones
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar o agregar nuevas características al proyecto:
+¡Tu ayuda es bienvenida\! Si tienes ideas, encuentras un error o quieres añadir funcionalidades, ¡contribuye\!
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama para tu característica (`git checkout -b nombre-rama`).
-3. Realiza tus cambios y haz un commit (`git commit -m 'Agregar nueva característica'`).
-4. Sube los cambios a tu fork (`git push origin nombre-rama`).
-5. Abre un Pull Request en el repositorio original.
+1.  **Haz un Fork** del repositorio.
+2.  **Crea una Rama:** `git checkout -b feature/tu-mejora`
+3.  **Realiza tus Cambios** y pruébalos.
+4.  **Haz Commit:** `git commit -m 'feat: Descripción breve del cambio'`
+5.  **Sube tus Cambios:** `git push origin feature/tu-mejora`
+6.  **Abre un Pull Request** explicando tus cambios.
+
+---
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y se publica bajo la [Licencia MIT](LICENSE). Siéntete libre de usar, modificar y distribuir este código para tus propios proyectos.
